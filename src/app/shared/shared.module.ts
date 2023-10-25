@@ -1,12 +1,14 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { LogoutPopupComponent } from './components/popups/logout-popup/logout-popup.component';
-import { NoDataFoundComponent } from './components/no-data-found/no-data-found.component';
-import { TranslateModule } from '@ngx-translate/core';
-import { NoSearchResultComponent } from './components/no-search-result/no-search-result.component';
-import { CurrentBalanceComponent } from './admin-components/current-balance/current-balance.component';
-import { PayPopUpComponent } from './components/popups/pay-pop-up/pay-pop-up.component';
+import { CarouselModule } from "ngx-owl-carousel-o";
+import { CommonModule } from "@angular/common";
+import { CurrentBalanceComponent } from "./admin-components/current-balance/current-balance.component";
+import { LogoutPopupComponent } from "./components/popups/logout-popup/logout-popup.component";
+import { NgModule } from "@angular/core";
+import { NgbCarouselModule } from "@ng-bootstrap/ng-bootstrap";
+import { NoDataFoundComponent } from "./components/no-data-found/no-data-found.component";
+import { NoSearchResultComponent } from "./components/no-search-result/no-search-result.component";
+import { PayPopUpComponent } from "./components/popups/pay-pop-up/pay-pop-up.component";
+import { RouterModule } from "@angular/router";
+import { TranslateModule } from "@ngx-translate/core";
 
 @NgModule({
   declarations: [
@@ -16,13 +18,7 @@ import { PayPopUpComponent } from './components/popups/pay-pop-up/pay-pop-up.com
     CurrentBalanceComponent,
     PayPopUpComponent,
   ],
-  imports: [
-    CommonModule,
-    RouterModule,
-    TranslateModule
-  ],
-  exports: [
-    CurrentBalanceComponent
-  ]
+  imports: [CommonModule, RouterModule, TranslateModule, CarouselModule],
+  exports: [CurrentBalanceComponent, CarouselModule],
 })
-export class SharedModule { }
+export class SharedModule {}
