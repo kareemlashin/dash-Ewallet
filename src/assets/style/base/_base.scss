@@ -1,0 +1,109 @@
+@import "../variables/variables";
+@import "./font";
+html,
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="ltr"] {
+  html,
+  body {
+    direction: ltr;
+    text-align: left;
+  }
+}
+
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden !important;
+  font-size: 16px;
+  font-family: "Zarid_Serif_Regular";
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  overflow: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+// general style
+.section-title {
+  color: #523203;
+  font-size: 32px;
+  margin-bottom: 48px;
+  font-family: Din_Bold;
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
+}
+.section-container {
+  margin: 0 142px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+label,
+input,
+select,
+div {
+  font-family: Zarid_Serif_Regular;
+  margin: 0;
+}

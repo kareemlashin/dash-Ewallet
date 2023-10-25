@@ -1,0 +1,107 @@
+@import "../../../../../assets/style/variables/variables";
+.dash-wrapper {
+    display: flex;
+    position: relative;
+    background-color: $secondary-color;
+    .side-menu {
+        width: 320px;
+        background: #fff;
+        margin-inline-end: 32px;
+        transition: all 0.3s ease-in-out;
+        min-height: 100vh;
+        @media (max-width: 992px) {
+            position: absolute;
+            height: 100%;
+            z-index: 2222222222222222222;
+            width: 0;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    .dash-content {
+        width: 100%;
+        @media (max-width: 992px) {
+            margin: 100px 0 0 0;
+        }
+    }
+
+    // overlay-notifications
+    .overlay-notifications {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    .view-overlay {
+        opacity: 1;
+        visibility: visible;
+        z-index: 22;
+    }
+}
+// hide menu
+:host {
+    .hide-menu {
+        width: 0 !important;
+        opacity: 0 !important;
+        right: -335px !important;
+        position: relative;
+        [dir="ltr"] & {
+            left: -335px !important;
+            right: auto !important;
+        }
+        //  @media (max-width: 992px) {
+        //     opacity: 0;
+        //     width: 0;
+        //     transition: all 0.3s ease-in-out;
+        //     margin: 0;
+        // }
+    }
+}
+.open-menu {
+    margin: 32px -32px 0 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    width: 0;
+    cursor: pointer;
+    span {
+        display: block;
+    }
+    @media (max-width: 992px) {
+        width: auto;
+        position: absolute;
+        right: 32px;
+        top: 0;
+        z-index: 22222222;
+        opacity: 1;
+    }
+}
+
+.appear-open-icon-menu {
+    width: 160px;
+    opacity: 1;
+    @media (max-width: 992px) {
+        width: auto;
+        position: absolute;
+        right: 32px;
+        top: 0;
+        z-index: 22222222;
+        opacity: 1;
+    }
+    @media (min-width: 992.1px) and (max-width: 1200px) {
+        position: absolute;
+        right: 32px;
+    }
+}
+
+// view menu at mobile
+
+.view-menu-mobile {
+    @media (max-width: 992px) {
+        width: 320px !important;
+        opacity: 1 !important;
+    }
+}

@@ -1,0 +1,87 @@
+<div class="popup-wrapper">
+  <div class="content">
+    <div class="txt">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <h1>الرصيد الحالي</h1>
+          <div class="d-flex align-items-center">
+            <p>1,123,000,1542</p>
+            <span> ريال سعودي </span>
+          </div>
+        </div>
+        <div>
+          <button class="primary-btn">شحن المحفظة</button>
+        </div>
+      </div>
+      <div class="hint-error">
+        <span> ! </span>
+        <p>
+          الرصيد الحالي المتاح لا يكفي لإتمام المعاملة. الرجاء شحن المحفظة و
+          إعادة المحاولة
+        </p>
+      </div>
+    </div>
+
+    <form>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <label for=""> رقم المعاملة </label>
+            <input
+              type="text"
+              value="EF20231330500000MT80CFTE28004111111111111111111"
+              class="colored-input"
+            />
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for=""> نوع المعاملة </label>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for=""> قيمة المعاملة </label>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for=""> تاريخ المعاملة </label>
+            <input type="text" />
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="form-group">
+            <label for=""> حالة المعاملة </label>
+            <input type="text" />
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="form-group">
+            <label for=""> المزاد </label>
+            <input type="text" />
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="form-group">
+            <label for=""> الأصل </label>
+            <input type="text" />
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="actions">
+    <div class="d-flex justify-content-end">
+      <button class="primary-btn" (click)="pay()" disabled>الدفع</button>
+
+      <button class="secondary-btn" (click)="closeModal()">إلغاء</button>
+    </div>
+  </div>
+</div>

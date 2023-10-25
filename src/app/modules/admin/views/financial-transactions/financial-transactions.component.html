@@ -1,0 +1,87 @@
+<div class="financial-transactions-wrapper">
+  <div class="page-content">
+    <app-current-balance></app-current-balance>
+
+    <div class="title">سجل المعاملات المالية</div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>رقم المعاملة المالية</th>
+            <th>نوع المعاملة</th>
+            <th>قيمة المعاملة</th>
+
+            <th>طريقة الدفع</th>
+            <th>تاريخ المعاملة</th>
+            <th>حالة المعاملة</th>
+            <th>الإجراءات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>15566222352</td>
+            <td>مبلغ دخول</td>
+            <td>1,332,000</td>
+            <td>Visa</td>
+            <td>2023/04/01</td>
+            <td>
+              <div class="status wait-payment">بإنتظار الدفع</div>
+            </td>
+            <td>
+              <div class="actions">
+                <img src="../../../../../assets/images/eye.png" alt="" />
+                <button (click)="openDialog()">الدفع</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>15566222352</td>
+            <td>مبلغ دخول</td>
+            <td>1,332,000</td>
+            <td>Visa</td>
+            <td>2023/04/01</td>
+            <td>
+              <div class="status payed">مدفوعة</div>
+            </td>
+            <td>
+              <div class="actions">
+                <img src="../../../../../assets/images/eye.png" alt="" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>15566222352</td>
+            <td>مبلغ دخول</td>
+            <td>1,332,000</td>
+            <td>Visa</td>
+            <td>2023/04/01</td>
+            <td>
+              <div class="status cancled">ملغية</div>
+            </td>
+            <td>
+              <div class="actions">
+                <img src="../../../../../assets/images/eye.png" alt="" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>15566222352</td>
+            <td>مبلغ دخول</td>
+            <td>1,332,000</td>
+            <td>Visa</td>
+            <td>2023/04/01</td>
+            <td>
+              <div class="status completed">مكتملة</div>
+            </td>
+            <td>
+              <div class="actions">
+                <img src="../../../../../assets/images/eye.png" alt="" />
+                <button (click)="openDialog()">الدفع</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

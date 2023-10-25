@@ -1,0 +1,56 @@
+$font-page: 10;
+
+$greyNatural: #8c8c8c;
+
+$fontWeights: 400, 500, 600, 700, 800, 900;
+
+$grids: 5, 2, 3, 4;
+$gaps: 1, 12, 24, 2, 27, 36;
+
+$border-radius: 1, 12, 08;
+
+$index: 1, 2, 1111, 2222, 3333, 4444, 5555, 6666, 7777, 8888, 9999;
+$fontSizes: 64, 48, 36, 28, 24, 2, 18, 16, 14, 12;
+$paddings: 4, 6, 8, 9, 1, 2, 4, 6, 8, 2, 22, 24, 26, 28, 3;
+$border-w: 1px;
+
+//colors
+$primary-color: #317372;
+$secondary-color: #f0f7f8;
+
+$text-color: #151616;
+$text-dark: #3c4449;
+$text-light: #a4a5a5;
+$text-bold: #2c2e32;
+$text-black: #000000;
+
+// bg-colors
+$bg-color-primary: #f0f9f6;
+$table-bg-color: #f0f9f6;
+$table-border-color: #e6e6e6;
+$bg-gray: #f2f2f2;
+
+/*status colors*/
+$color-info: #3f5fa0;
+$color-success: #1b6144;
+$color-warning: #fb8904;
+$color-danger: #b42318;
+$color-dangerLight: #cc3333;
+$color-dangerDark: #790606;
+
+/*status-background*/
+$background-info: rgba(63, 95, 160, 0.16);
+$background-success: #e1f4e9;
+$background-warning: #fef3d0;
+$background-danger: #fef3f2;
+
+// transitions
+
+$transition: all 0.35s ease-in-out;
+$border-radius-sm: 0.4rem;
+$border-radius-md: 0.8rem;
+$border-radius-lg: 1.2rem;
+$border-radius-xl: 1.6rem;
+.c-color {
+    color: $text-color !important;
+}
